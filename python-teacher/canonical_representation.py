@@ -1,7 +1,7 @@
 def can_repr(number):
 
     '''Take a positive integer greater than 1 as an argument
-       and return canonical representation as a list of prime numbers in ascending order'''
+       and return canonical representation as a list of prime numbers in ascending order.'''
 
     message_is_not_positive = "Введите положительное число!"
     message_one_has_no_divisors = "Единица не имеет простых множителей!"
