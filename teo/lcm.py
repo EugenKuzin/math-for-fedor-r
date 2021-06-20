@@ -3,7 +3,7 @@ def lcm(a, b):
         a, b = b, a
     result = a
     while result % b != 0:
-        result += result
+        result += a
     else:
         return result
 
