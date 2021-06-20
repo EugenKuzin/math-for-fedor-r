@@ -1,4 +1,4 @@
-def gcd(a, b):
+def lcm(a, b):
     if a < b:
         a, b = b, a
     result = a
@@ -10,4 +10,4 @@ def gcd(a, b):
 a = int(input('Введи первое число: '))
 b = int(input('Введи второе число: '))
 
-print(gcd(a, b))
+print(lcm(a, b))

@@ -1,6 +1,6 @@
 from non_recursive_canonical_representation import can_repr # импортирую функцию can_repr из модуля non_recursive_canonical_representation
 
-def gcm(a, b):
+def gcd(a, b):
     if a > b: # мне нужно, чтобы первое число было меньше, так что в другом случае я меняю эти числа местами
         a, b = b, a
     a_primes = can_repr(a) # первое (меньшее) число я раскладываю на простые множители
@@ -15,4 +15,4 @@ def gcm(a, b):
 a = int(input('Введи первое число: '))
 b = int(input('Введи второе число: '))
 
-print(gcm(a, b))
+print(gcd(a, b))
