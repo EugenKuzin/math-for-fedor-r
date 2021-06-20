@@ -11,5 +11,4 @@ def can_repr(x):
     result += [x]
     return result
 
-
-print(can_repr(int(input())))
+# print(can_repr(int(input())))
