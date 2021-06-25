@@ -11,4 +11,8 @@ def can_repr(x):
     result += [x]
     return result
 
-# print(can_repr(int(input())))
+def main():
+    print(can_repr(int(input())))
+
+if __name__ == '__main__':
+    main()
