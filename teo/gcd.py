@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from non_recursive_canonical_representation import can_repr # импортирую функцию can_repr из модуля non_recursive_canonical_representation
 
 def gcd(a, b):
@@ -11,8 +13,10 @@ def gcd(a, b):
             b /= elem # а второе число становится результатом выполнения этого деления
     return result
 
+def main():
+    a = int(input('Введи первое число: '))
+    b = int(input('Введи второе число: '))
+    print(gcd(a, b))
 
-a = int(input('Введи первое число: '))
-b = int(input('Введи второе число: '))
-
-print(gcd(a, b))
+if __name__ == '__main__':
+    main()

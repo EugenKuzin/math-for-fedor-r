@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def lcm(a, b):
     if a < b:
         a, b = b, a
@@ -7,7 +9,10 @@ def lcm(a, b):
     else:
         return result
 
-a = int(input('Введи первое число: '))
-b = int(input('Введи второе число: '))
+def main():
+    a = int(input('Введи первое число: '))
+    b = int(input('Введи второе число: '))
+    print(lcm(a, b))
 
-print(lcm(a, b))
+if __name__ == '__main__':
+    main()

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def can_repr(x):
     result = []
     if x <= 0:

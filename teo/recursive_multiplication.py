@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def sum(a, b):
     return a if b == 0 else successor(sum(a, predecessor(b)))
 
@@ -12,7 +14,10 @@ def multiplication(a,b):
         return 0
     return a if b == 1 else sum(a, multiplication(a, predecessor(b)))
 
-a = int(input())
-b = int(input())
+def main():
+    a = int(input())
+    b = int(input())
+    print(multiplication(a,b))
 
-print(multiplication(a,b))
+if __name__ == '__main__':
+    main()

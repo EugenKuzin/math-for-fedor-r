@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def can_repr(x):
     global multipliers
     if x == 1:
@@ -14,6 +16,9 @@ def can_repr(x):
         else:
             return multipliers
 
-multipliers = []
+def main():    
+    multipliers = []
+    print(can_repr(int(input())))
 
-print(can_repr(int(input())))
+if __name__ == '__main__':
+    main()

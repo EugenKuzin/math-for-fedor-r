@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from non_recursive_canonical_representation import can_repr
 
 def prime_nums_not_greater_than(x):
@@ -7,4 +9,8 @@ def prime_nums_not_greater_than(x):
             result.append(i)
     return result
 
-print(prime_nums_not_greater_than(int(input('Введи число: '))))
+def main():
+    print(prime_nums_not_greater_than(int(input('Введи число: '))))
+
+if __name__ == '__main__':
+    main()
