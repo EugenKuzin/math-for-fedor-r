@@ -19,7 +19,7 @@ def sieve(x):
         return result
 
 def main():
-    print('Enter a positive integer that you want to decompose into its prime factors:')
+    print('Enter a positive integer:')
     print(sieve(int(input())))
 
 if __name__ == '__main__':
