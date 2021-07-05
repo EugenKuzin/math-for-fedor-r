@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from math import sqrt
+
 def sieve(x):
     '''Print all prime numbers less than or equal to a given positive integer using Sieve of Eratosthenes.'''
     if x < 1:
@@ -9,7 +11,8 @@ def sieve(x):
     else:
         result = [2]
         not_primes = set()
-        for i in range(3, x + 1, 2):
+        y = int(sqrt(x) // 1)
+        for i in range(3, y + 1, 2):
             if i not in not_primes:
                 for k in range(i ** 2, x + 1, i * 2):
                     if k % i == 0:
@@ -17,6 +20,7 @@ def sieve(x):
         for i in range(3, x + 1, 2):
             if i not in not_primes:
                 result.append(i)
+        print(x)
         return result
 
 def main():
