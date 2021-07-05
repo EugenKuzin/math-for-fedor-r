@@ -11,7 +11,7 @@ def sieve(x):
         not_primes = set()
         for i in range(3, x + 1, 2):
             if i not in not_primes:
-                for k in range(i ** 2, x + 1, i):
+                for k in range(i ** 2, x + 1, i * 2):
                     if k % i == 0:
                         not_primes.add(k)
         for i in range(3, x + 1, 2):
