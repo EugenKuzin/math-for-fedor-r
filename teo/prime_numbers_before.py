@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from non_recursive_canonical_representation import can_repr
+from canonical_representation_1 import can_repr
 
 def prime_nums_not_greater_than(x):
     result = []
