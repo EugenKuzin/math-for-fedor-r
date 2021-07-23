@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 def can_repr(x: int) -> list:
-    '''
-    Express a given integer as the product of its prime factors.
-    '''
+    '''Express a given integer as the product of its prime factors.'''
     result = []
     if x <= 0:
         return []

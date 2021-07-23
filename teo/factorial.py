@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 def factorial(a: int) -> int:
-    '''
-    Multiply a given positive integer by every integer below it.
-    '''
+    '''Multiply a given positive integer by every integer below it.'''
     if a == 0:
         return 1
     result = a * factorial(a - 1)
