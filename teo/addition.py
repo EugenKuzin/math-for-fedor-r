@@ -22,8 +22,7 @@ def main():
     print('Enter two integers you want to sum...')
     a = int(input('> '))
     b = int(input('> '))
-    print('Result:')
-    print(sum(a, b))
+    print('Result: ' + str(sum(a, b)))
 
 if __name__ == '__main__':
     main()

@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
-def can_repr(x):
+def can_repr(x: int) -> list:
+    '''
+    Express a given integer as the product of its prime factors.
+    '''
     result = []
     if x <= 0:
         return []
@@ -14,7 +17,9 @@ def can_repr(x):
     return result
 
 def main():
-    print(can_repr(int(input())))
+    print('Enter a positive integer you want to decompose into its prime factors:')
+    a = int(input('> '))
+    print('Result: ' + str(can_repr(a)))
 
 if __name__ == '__main__':
     main()
