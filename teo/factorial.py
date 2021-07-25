@@ -10,7 +10,7 @@ def factorial(a: int) -> int:
 def main():
     print('Enter a positive integer to perform factorial calculations:')
     a = int(input('> '))
-    print('Result: ' + str(factorial(a)))
+    print('Result: ', factorial(a))
 
 if __name__ == '__main__':
     main()
