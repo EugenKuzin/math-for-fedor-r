@@ -4,6 +4,17 @@ from canonical_representation import can_repr
 
 def gcd(a, b: int) -> int:
     '''Find the greatest common divisor of given positive integers.'''
+    if a <= 0 or b <= 0:
+        try:
+            print('\n\t' + 'Enter two positive integers!' + '\n')
+            a = int(input('\t\t> '))
+            b = int(input('\t\t> '))
+            return gcd(a, b)
+        except:
+            print('\n\t' + 'Enter two positive integers!' + '\n')
+            a = int(input('\t\t> '))
+            b = int(input('\t\t> '))
+            return gcd(a, b)
     if a > b:
         a, b = b, a
     a_primes = can_repr(a)
@@ -15,10 +26,14 @@ def gcd(a, b: int) -> int:
     return result
 
 def main():
-    print('Enter two positive integers:')
-    a = int(input('> '))
-    b = int(input('> '))
-    print('Result: ', gcd(a, b))
+    try:
+        a = int(input('\t\t> '))
+        b = int(input('\t\t> '))
+    except:
+        print('\n\t' + 'Enter two positive integers!' + '\n')
+        return main()
+    print('\n\t' + 'RESULT: ', gcd(a, b), '\n')
 
 if __name__ == '__main__':
+    print('\n\t' + 'Enter two positive integers to find the greatest common divisor of those:' + '\n')
     main()

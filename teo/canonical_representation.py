@@ -15,9 +15,13 @@ def can_repr(x: int) -> list:
     return result
 
 def main():
-    print('Enter a positive integer you want to decompose into its prime factors:')
-    a = int(input('> '))
-    print('Result: ', can_repr(a))
+    try:
+        a = int(input('\t\t> '))
+        print('\n\t' + 'RESULT: ', can_repr(a), '\n')
+    except:
+        print('\n\t' + 'Enter an integer!' + '\n')
+        return main()
 
 if __name__ == '__main__':
+    print('\n\t' + 'Enter an integer you want to decompose into its prime factors:' + '\n')
     main()
