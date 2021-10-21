@@ -14,11 +14,6 @@ def predecessor(x: int) -> int:
 
 def multiplication(a, b: int) -> int:
     '''Return the product of given non-negative integers using recursion.'''
-    if a < 0 or b < 0:
-        print('\n\t' + 'Enter two non-negative integers!' + '\n')
-        a = int(input('\t\t> '))
-        b = int(input('\t\t> '))
-        return multiplication(a, b)
     if b == 0:
         return 0
     return a if b == 1 else sum(a, multiplication(a, predecessor(b)))
@@ -30,8 +25,14 @@ def main():
     except:
         print('\n\t' + 'Enter integers!' + '\n')
         return main()
-    print('\n\t' + 'RESULT: ', multiplication(a,b), '\n')
+    if a < 0 or b < 0:
+        print('\n\t' + 'Enter non-negative integers!' + '\n')
+        return main()
+    print('\n\t' + 'RESULT: ', multiplication(a, b), '\n')
 
-if __name__ == '__main__':
+def start():
     print('\n\t' + 'Enter two non-negative integers to get a product of those:' + '\n')
     main()
+
+if __name__ == '__main__':
+    start()
