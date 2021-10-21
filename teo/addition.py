@@ -12,9 +12,14 @@ def sum(a, b: int) -> int:
     '''Return the sum of given positive integers using recursion.'''
     if a < 0 or b < 0:
         print('\n\t' + 'Enter two positive integers!' + '\n')
-        a = int(input('\t\t> '))
-        b = int(input('\t\t> '))
-        return sum(a, b)
+        try:
+            a = int(input('\t\t> '))
+            b = int(input('\t\t> '))
+        except:
+            print('\n\t' + 'Enter integers!' + '\n')
+            a = int(input('\t\t> '))
+            b = int(input('\t\t> '))
+            return sum(a, b)
     return a if b == 0 else successor(sum(a, predecessor(b)))
 
 def main():
