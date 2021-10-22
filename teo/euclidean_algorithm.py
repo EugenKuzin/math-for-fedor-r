@@ -31,6 +31,9 @@ def main():
         return main()
     print('\n\t' + 'RESULT: ', euclid(a, b), '\n')
 
-if __name__ == '__main__':
+def start():
     print('\n\t' + 'Enter two positive integers to find the greatest common divisor of those:' + '\n')
     main()
+
+if __name__ == '__main__':
+    start()
