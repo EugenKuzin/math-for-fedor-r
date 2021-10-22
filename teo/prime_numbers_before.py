@@ -27,6 +27,9 @@ def main():
         return main()
     print('\n\t' + 'RESULT: ', prime_nums_before(a), '\n')
 
-if __name__ == '__main__':
+def start():
     print('\n\t' + 'Enter a positive integer to find all prime numbers not greater than that:' + '\n')
     main()
+
+if __name__ == '__main__':
+    start()
